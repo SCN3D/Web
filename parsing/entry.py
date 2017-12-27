@@ -4,7 +4,7 @@
 id_flag = 0
 ac_flag = 0
 sequence = ''
-with open('test2.txt') as fp, open("id.txt","w") as output:
+with open('uniprot_sprot.txt') as fp, open("entry.csv","w") as output:
 	for line in fp:
 		collapsed = ' '.join(line.split())
 		data = collapsed.split(";")
@@ -27,7 +27,8 @@ with open('test2.txt') as fp, open("id.txt","w") as output:
 			print(sequence)
 			id_flag = 0
 			ac_flag = 0
-			output.write("%s;%s;%s\n" % (out_id,out_ac,sequence))
+			sequence = ''.join(sequence.split())
+			output.write("%s,%s,%s\n" % (out_id,out_ac,sequence))
 			sequence = '';
 			print('id_flag: ', id_flag, '&ac_flag: ', ac_flag)
 output.close()

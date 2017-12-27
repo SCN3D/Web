@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 # Open a file
-with open('test2.txt') as fp, open("id_go.txt","w") as output:
+with open('1.txt') as fp, open("id_go.csv","w") as output:
 	for line in fp:
 		collapsed = ' '.join(line.split())
 		data = collapsed.split(";")
@@ -13,7 +13,7 @@ with open('test2.txt') as fp, open("id_go.txt","w") as output:
 			parsed_2 = data[1].split(" ")
 			out_go = parsed_2[1]
 			print('GO:  ',parsed_2[1])
-			output.write("%s;%s\n" % (out_id,out_go))
+			output.write("%s,%s\n" % (out_id,out_go))
 output.close()
         
              

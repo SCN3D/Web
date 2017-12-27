@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 # Open a file
-with open('test2.txt') as fp, open("pfam_table.txt","w") as output:
+with open('1.txt') as fp, open("pfam_table.csv","w") as output:
 	for line in fp:
 		collapsed = ' '.join(line.split())
 		data = collapsed.split(";")
@@ -13,5 +13,5 @@ with open('test2.txt') as fp, open("pfam_table.txt","w") as output:
 			print('Pfam:  ',parsed_2[1])
 			print('description: ', data[2])
 			print('description: ', data[3])
-			output.write("%s;%s\n" % (out_pfam,description))
+			output.write("%s,%s\n" % (out_pfam,description))
 output.close()

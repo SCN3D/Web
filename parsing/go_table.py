@@ -1,5 +1,5 @@
 #!/usr/bin/python
-with open('test2.txt') as fp, open("go_table.txt","w") as output:
+with open('1.txt') as fp, open("go_table.csv","w") as output:
 	for line in fp:
 		collapsed = ' '.join(line.split())
 		data = collapsed.split(";")
@@ -11,5 +11,5 @@ with open('test2.txt') as fp, open("go_table.txt","w") as output:
 			print('GO:  ',parsed_2[1])
 			print('description: ', data[2])
 			print('iea: ', data[3])
-			output.write("%s;%s\n" % (out_go,description))
+			output.write("%s,%s\n" % (out_go,description))
 	output.close()
