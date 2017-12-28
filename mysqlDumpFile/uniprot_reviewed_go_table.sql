@@ -25,18 +25,10 @@ DROP TABLE IF EXISTS `go_table`;
 CREATE TABLE `go_table` (
   `go_id` varchar(45) NOT NULL,
   `description` varchar(200) NOT NULL DEFAULT 'none',
-  PRIMARY KEY (`go_id`)
+  PRIMARY KEY (`go_id`),
+  UNIQUE KEY `go_id_UNIQUE` (`go_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `go_table`
---
-
-LOCK TABLES `go_table` WRITE;
-/*!40000 ALTER TABLE `go_table` DISABLE KEYS */;
-/*!40000 ALTER TABLE `go_table` ENABLE KEYS */;
-UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -47,4 +39,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-11-26 22:27:58
+-- Dump completed on 2017-12-28 14:19:09

@@ -28,15 +28,6 @@ CREATE TABLE `pfam_table` (
   PRIMARY KEY (`pfam_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `pfam_table`
---
-
-LOCK TABLES `pfam_table` WRITE;
-/*!40000 ALTER TABLE `pfam_table` DISABLE KEYS */;
-/*!40000 ALTER TABLE `pfam_table` ENABLE KEYS */;
-UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -47,4 +38,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-11-26 22:27:59
+-- Dump completed on 2017-12-28 14:19:09

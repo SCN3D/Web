@@ -24,18 +24,10 @@ DROP TABLE IF EXISTS `id_go`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `id_go` (
   `id_id` varchar(45) NOT NULL,
-  `go_id` varchar(45) NOT NULL
+  `go_id` varchar(45) NOT NULL,
+  PRIMARY KEY (`id_id`,`go_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `id_go`
---
-
-LOCK TABLES `id_go` WRITE;
-/*!40000 ALTER TABLE `id_go` DISABLE KEYS */;
-/*!40000 ALTER TABLE `id_go` ENABLE KEYS */;
-UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -46,4 +38,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-11-26 22:27:58
+-- Dump completed on 2017-12-28 14:19:08
