@@ -1,5 +1,5 @@
 #!/usr/bin/python
-with open('1.txt') as fp, open("go_table.csv","w") as output:
+with open('uniprot_sprot.txt') as fp, open("go_table.csv","w") as output:
 	for line in fp:
 		collapsed = ' '.join(line.split())
 		data = collapsed.split(";")
